@@ -1,0 +1,235 @@
+{
+  "inbound": [
+    {
+      "localPort": 10808,
+      "protocol": "socks",
+      "udpEnabled": true,
+      "sniffingEnabled": true
+    }
+  ],
+  "logEnabled": false,
+  "loglevel": "warning",
+  "index": 1,
+  "vmess": [
+    {
+      "configVersion": 2,
+      "address": "www.easy-life.xyz",
+      "port": 443,
+      "id": "368ce4bd-9fb8-47c4-a0ec-ee0f33612eab",
+      "alterId": 0,
+      "security": "none",
+      "network": "tcp",
+      "remarks": "CHINA_HK",
+      "headerType": "none",
+      "requestHost": "",
+      "path": "",
+      "streamSecurity": "xtls",
+      "allowInsecure": "False",
+      "configType": 5,
+      "testResult": "",
+      "subid": "",
+      "flow": "xtls-rprx-direct",
+      "sni": ""
+    },
+    {
+      "configVersion": 2,
+      "address": "www.easy-life.xyz",
+      "port": 23641,
+      "id": "WZO4gnEvAI",
+      "alterId": 0,
+      "security": "J803bqUwLr",
+      "network": "",
+      "remarks": "sock",
+      "headerType": "",
+      "requestHost": "",
+      "path": "",
+      "streamSecurity": "",
+      "allowInsecure": "",
+      "configType": 4,
+      "testResult": "",
+      "subid": "",
+      "flow": "",
+      "sni": null
+    }
+  ],
+  "muxEnabled": false,
+  "kcpItem": {
+    "mtu": 1350,
+    "tti": 50,
+    "uplinkCapacity": 12,
+    "downlinkCapacity": 100,
+    "congestion": false,
+    "readBufferSize": 2,
+    "writeBufferSize": 2
+  },
+  "sysProxyType": 1,
+  "speedTestUrl": "http://cachefly.cachefly.net/10mb.test",
+  "speedPingTestUrl": "https://www.google.com/generate_204",
+  "allowLANConn": false,
+  "enableStatistics": true,
+  "keepOlderDedupl": false,
+  "statisticsFreshRate": 2000,
+  "remoteDNS": "",
+  "defAllowInsecure": false,
+  "subItem": [
+    {
+      "id": "",
+      "remarks": "remarks",
+      "url": "url",
+      "enabled": true
+    }
+  ],
+  "uiItem": {
+    "mainSize": "1287, 788",
+    "mainLvColWidth": {
+      "def": 30,
+      "configType": 80,
+      "remarks": 153,
+      "address": 165,
+      "port": 57,
+      "security": 90,
+      "network": 70,
+      "subRemarks": 50,
+      "testResult": 145,
+      "todayDown": 139,
+      "todayUp": 82,
+      "totalDown": 90,
+      "totalUp": 95
+    }
+  },
+  "domainStrategy": "AsIs",
+  "domainMatcher": "linear",
+  "routingIndex": 1,
+  "routings": [
+    {
+      "remarks": "全局(Global)",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": "0-65535",
+          "inboundTag": null,
+          "outboundTag": "proxy",
+          "ip": null,
+          "domain": null,
+          "protocol": null
+        }
+      ],
+      "enabled": true,
+      "locked": false
+    },
+    {
+      "remarks": "绕过大陆(Whitelist)",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": [],
+          "outboundTag": "direct",
+          "ip": null,
+          "domain": [
+            "apple",
+            "microsoft",
+            "www.oracle.com"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": null,
+          "domain": [
+            "domain:example-example.com",
+            "domain:example-example2.com"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "block",
+          "ip": null,
+          "domain": [
+            "geosite:category-ads-all"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": null,
+          "domain": [
+            "geosite:cn"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": [
+            "geoip:private",
+            "geoip:cn"
+          ],
+          "domain": null,
+          "protocol": null
+        }
+      ],
+      "enabled": true,
+      "locked": false
+    },
+    {
+      "remarks": "locked",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "proxy",
+          "ip": [],
+          "domain": [
+            "geosite:google"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": [],
+          "domain": [
+            "domain:example-example.com",
+            "domain:example-example2.com"
+          ],
+          "protocol": null
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "block",
+          "ip": [],
+          "domain": [
+            "geosite:category-ads-all"
+          ],
+          "protocol": null
+        }
+      ],
+      "enabled": true,
+      "locked": true
+    }
+  ],
+  "enableRoutingAdvanced": true,
+  "coreType": 0,
+  "ignoreGeoUpdateCore": false,
+  "systemProxyExceptions": ""
+}

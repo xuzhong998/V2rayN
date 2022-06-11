@@ -1,0 +1,44 @@
+{
+  "server": [
+    {
+      "itemId": "d3d3Lnh1emhvbmcuZnVuNDQz",
+      "totalUp": 67926975,
+      "totalDown": 4591662529,
+      "todayUp": 0,
+      "todayDown": 0,
+      "dateNow": 637905024000000000
+    },
+    {
+      "itemId": "NDMuMTI4LjYyLjEyNTE5ODAw",
+      "totalUp": 59081881,
+      "totalDown": 12687659896,
+      "todayUp": 0,
+      "todayDown": 0,
+      "dateNow": 637905024000000000
+    },
+    {
+      "itemId": "d3d3LmVhc3ktbGlmZS54eXo0NDM=",
+      "totalUp": 575845988,
+      "totalDown": 70507473019,
+      "todayUp": 107569678,
+      "todayDown": 13818333,
+      "dateNow": 637905024000000000
+    },
+    {
+      "itemId": "d3d3Lnh1emhvbmcuZnVuMTk5MDA=",
+      "totalUp": 29293,
+      "totalDown": 102258,
+      "todayUp": 0,
+      "todayDown": 0,
+      "dateNow": 637905024000000000
+    },
+    {
+      "itemId": "",
+      "totalUp": 0,
+      "totalDown": 0,
+      "todayUp": 0,
+      "todayDown": 0,
+      "dateNow": 637905024000000000
+    }
+  ]
+}
